@@ -1,0 +1,94 @@
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f7f5f2;
+color:#222;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#0f2942;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+padding:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.donate-btn{
+background:#b08d57;
+padding:10px 20px;
+border-radius:5px;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(58,41,30,.55),rgba(58,41,30,.55)),
+url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+}
+
+.overlay{
+max-width:700px;
+margin-left:80px;
+color:white;
+}
+
+.hero h1{
+font-size:64px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.6;
+margin-bottom:30px;
+}
+
+.buttons a{
+display:inline-block;
+margin-right:15px;
+padding:14px 28px;
+background:#b08d57;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.mission{
+padding:100px 15%;
+text-align:center;
+}
+
+.mission h2{
+font-size:42px;
+color:#0f2942;
+}
+
+.mission p{
+font-size:20px;
+line-height:1.8;
+max-width:900px;
+margin:auto;
+}
+
+footer{
+background:#0f2942;
+color:white;
+text-align:center;
+padding:40px;
+}
