@@ -421,3 +421,14 @@ padding:70px 20px;
     transform:translateY(-8px);
     box-shadow:0 18px 35px rgba(0,0,0,.12);
 }
+/* ===========================
+   Find Help Section
+=========================== */
+
+.help-topics{
+    background:#ffffff;
+}
+
+.help-topics .card{
+    border-top:5px solid #b08d57;
+}
