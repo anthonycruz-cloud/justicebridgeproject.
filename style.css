@@ -59,6 +59,13 @@ box-shadow:0 5px 20px rgba(0,0,0,.12);
     flex-shrink:0;
 }
 
+.logo span{
+    color:white;
+    font-size:28px;
+    font-weight:700;
+    font-family:'Cormorant Garamond', serif;
+}
+
 .navbar ul{
 display:flex;
 list-style:none;
