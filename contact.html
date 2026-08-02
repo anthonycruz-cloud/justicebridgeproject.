@@ -96,22 +96,42 @@ We welcome law firms, nonprofits, schools, and community organizations.
 </div>
 
 </div>
+<form
+  class="contact-form"
+  action="https://formspree.io/f/meeybvyp"
+  method="POST"
+>
 
-<form class="contact-form">
+  <input
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    required
+  >
 
-<input type="text" placeholder="Full Name" required>
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+  >
 
-<input type="email" placeholder="Email Address" required>
+  <input
+    type="text"
+    name="subject"
+    placeholder="Subject"
+  >
 
-<input type="text" placeholder="Subject">
+  <textarea
+    name="message"
+    rows="6"
+    placeholder="How can we help?"
+    required
+  ></textarea>
 
-<textarea rows="6" placeholder="How can we help?"></textarea>
-
-<button type="submit">
-
-Send Message
-
-</button>
+  <button type="submit">
+    Send Message
+  </button>
 
 </form>
 
