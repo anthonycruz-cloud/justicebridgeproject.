@@ -1,145 +1,367 @@
-body{
+/* ===========================
+   Justice Bridge Project
+   Main Stylesheet
+=========================== */
+
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#f7f5f2;
-color:#222;
+padding:0;
+box-sizing:border-box;
 }
 
-nav{
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f8f6f3;
+color:#333;
+line-height:1.7;
+}
+
+.container{
+width:min(1200px,90%);
+margin:auto;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.navbar{
+position:sticky;
+top:0;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 60px;
 background:#0f2942;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:30px;
+font-weight:700;
 color:white;
 }
 
-nav ul{
+.navbar ul{
 display:flex;
 list-style:none;
 gap:30px;
-padding:0;
 }
 
-nav a{
+.navbar a{
 color:white;
 text-decoration:none;
+font-weight:500;
+transition:.3s;
 }
 
-.donate-btn{
-background:#b08d57;
-padding:10px 20px;
-border-radius:5px;
+.navbar a:hover{
+color:#d4af37;
 }
+
+.donate-button{
+background:#b08d57;
+padding:12px 24px;
+border-radius:8px;
+font-weight:600;
+}
+
+.donate-button:hover{
+background:#c9a86a;
+color:white;
+}
+
+/* ===========================
+   Hero
+=========================== */
 
 .hero{
-height:90vh;
-background:linear-gradient(rgba(58,41,30,.55),rgba(58,41,30,.55)),
-url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80");
+height:100vh;
+background:
+linear-gradient(rgba(60,42,28,.60),rgba(60,42,28,.60)),
+url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1800&q=80");
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
 }
 
-.overlay{
+.hero-overlay{
+width:100%;
+}
+
+.hero-content{
 max-width:700px;
-margin-left:80px;
+margin-left:8%;
 color:white;
+}
+
+.hero-tag{
+display:inline-block;
+background:rgba(255,255,255,.15);
+padding:10px 18px;
+border-radius:40px;
+margin-bottom:25px;
+font-size:14px;
 }
 
 .hero h1{
-font-size:64px;
-margin-bottom:20px;
+font-family:'Cormorant Garamond',serif;
+font-size:72px;
+line-height:1.05;
+margin-bottom:25px;
 }
 
 .hero p{
-font-size:22px;
-line-height:1.6;
-margin-bottom:30px;
+font-size:21px;
+margin-bottom:35px;
+max-width:600px;
 }
 
-.buttons a{
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn,
+.card-button{
+
 display:inline-block;
-margin-right:15px;
-padding:14px 28px;
+padding:15px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+
+}
+
+.primary-btn{
 background:#b08d57;
 color:white;
-text-decoration:none;
-border-radius:6px;
 }
 
-.mission{
-padding:100px 15%;
-text-align:center;
-}
-
-.mission h2{
-font-size:42px;
+.secondary-btn{
+background:white;
 color:#0f2942;
 }
 
-.mission p{
-font-size:20px;
-line-height:1.8;
-max-width:900px;
-margin:auto;
+.primary-btn:hover,
+.secondary-btn:hover,
+.card-button:hover{
+
+transform:translateY(-4px);
+
 }
 
-footer{
-background:#0f2942;
-color:white;
-text-align:center;
-padding:40px;
+/* ===========================
+   Sections
+=========================== */
+
+section{
+padding:100px 0;
 }
-.service-grid{
+
+section h2{
+font-family:'Cormorant Garamond',serif;
+font-size:48px;
+text-align:center;
+color:#0f2942;
+margin-bottom:20px;
+}
+
+.section-intro{
+text-align:center;
+max-width:750px;
+margin:0 auto 50px;
+font-size:19px;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
-margin-top:50px;
 }
 
-.service-card{
+.card{
+
 background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
+padding:35px;
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.35s;
+
 }
 
-.service-card:hover{
-transform:translateY(-8px);
+.card:hover{
+
+transform:translateY(-10px);
+
 }
 
-.service-card h2{
+.card h3{
+
+font-size:24px;
+margin-bottom:15px;
 color:#0f2942;
+
 }
+
+.card p{
+
+color:#555;
+
+}
+
+.card-button{
+
+margin-top:20px;
+background:#0f2942;
+color:white;
+
+}
+
+/* ===========================
+   Mission / Founder
+=========================== */
+
+.mission,
+.founder,
+.why-exists,
+.vision,
+.our-values{
+
+text-align:center;
+
+}
+
+.mission p,
+.founder p,
+.why-exists p,
+.vision p{
+
+max-width:850px;
+margin:auto;
+font-size:20px;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+background:#0f2942;
+color:white;
+text-align:center;
+padding:70px 20px;
+
+}
+
+footer h2{
+
+color:white;
+margin-bottom:20px;
+
+}
+
+footer p{
+
+margin-bottom:12px;
+
+}
+
+/* ===========================
+   Contact Form
+=========================== */
+
 .contact-form{
+
 display:flex;
 flex-direction:column;
 gap:20px;
 max-width:700px;
 margin:40px auto;
+
 }
 
 .contact-form input,
 .contact-form textarea{
+
 padding:16px;
-border:1px solid #ccc;
-border-radius:8px;
+border-radius:10px;
+border:1px solid #ddd;
 font-size:16px;
+
 }
 
 .contact-form button{
-background:#0f2942;
+
+background:#b08d57;
 color:white;
 padding:16px;
 border:none;
-border-radius:8px;
+border-radius:10px;
 font-size:18px;
 cursor:pointer;
+
 }
 
 .contact-form button:hover{
-background:#1b4368;
+
+background:#9c7846;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+.navbar{
+
+flex-direction:column;
+gap:20px;
+padding:20px;
+
+}
+
+.navbar ul{
+
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero-content{
+
+margin:0 30px;
+
+}
+
+section{
+
+padding:70px 20px;
+
+}
+
 }
