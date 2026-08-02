@@ -29,16 +29,13 @@ margin:auto;
    Navigation
 =========================== */
 
-.navbar{
-position:sticky;
-top:0;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:#0f2942;
-z-index:1000;
-box-shadow:0 5px 20px rgba(0,0,0,.12);
+.navbar ul{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    gap:22px;
+    margin:0;
+    padding:0;
 }
 
 .logo{
