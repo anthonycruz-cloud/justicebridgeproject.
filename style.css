@@ -405,3 +405,19 @@ padding:70px 20px;
 }
 
 }
+/* ===========================
+   Impact Section
+=========================== */
+
+.impact{
+    background:#f2efe9;
+}
+
+.impact .card{
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.impact .card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
