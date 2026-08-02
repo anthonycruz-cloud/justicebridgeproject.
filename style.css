@@ -114,3 +114,32 @@ transform:translateY(-8px);
 .service-card h2{
 color:#0f2942;
 }
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:20px;
+max-width:700px;
+margin:40px auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:16px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+.contact-form button{
+background:#0f2942;
+color:white;
+padding:16px;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+.contact-form button:hover{
+background:#1b4368;
+}
